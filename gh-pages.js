@@ -28,12 +28,13 @@ const srcConfig = {
 
 function deploy(dist, config, nextDeploy) {
   ghpages.publish(dist, config, (error) => {
-    console.log(error);
+    if (error) {
+      console.log(error);
+      return;
+    }
     ghpagesCacheClean();
+    if (nextDeploy) nextDeploy();
   });
-  if (nextDeploy) {
-    nextDeploy();
-  }
 }
 
 function startDeploy(args) {
@@ -45,7 +46,7 @@ function startDeploy(args) {
   } else if (args.includes("-s")) {
     deploy(projectFolder, srcConfig);
     console.log("src");
-  }
+  } else console.log("Incorrect parameters!");
 }
 
 startDeploy(process.argv.slice(2));
