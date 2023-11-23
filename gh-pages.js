@@ -10,7 +10,7 @@ const buildConfig = {
 const srcConfig = {
   // src: ["src/*", "public/*"],
   // src: "*!(node_modules)/*",
-  src: ["**!(node_modules)"],
+  src: ["**!(node_modules)", "src/*", "public/*"],
   remote: "remote",
   branch: "master",
 };
