@@ -1,2 +1,2 @@
 export default () => <>THIS IS SCRATCH!!!</>;
-console.log("Hello!");
+// console.log("Hello!");
