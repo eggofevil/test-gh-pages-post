@@ -11,7 +11,7 @@ const srcConfig = {
   // src: ["src/*", "public/*"],
   // src: "*!(node_modules)/*",
   // src: ["**!(node_modules)", "src/*", "public/*"],
-  src: ["*!(node_modules)", "*!(node_modules)/*"],
+  src: ["*!(node_modules)", "*!(node_modules)/*", "."],
   remote: "remote",
   branch: "master",
 };
