@@ -2,7 +2,7 @@ const ghpages = require("gh-pages");
 const ghpagesCacheClean = require(".\\node_modules\\gh-pages\\bin\\gh-pages-clean.js");
 
 const buildFolder = "build";
-const projectFolder = "./";
+const projectFolder = ".";
 
 const buildConfig = {
   remote: "remote",
