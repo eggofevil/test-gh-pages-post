@@ -1,2 +1,2 @@
-export default () => <>THIS IS SCRATCH!!!</>;
-//console.log("Hello!");
+export default () => <>Deploy example</>;
+console.log("Hello!");

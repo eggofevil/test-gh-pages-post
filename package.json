@@ -13,8 +13,8 @@
   "description": "Simple environment for testing publishing on github",
   "version": "0.0.1",
   "scripts": {
-    "predeploy": "",
-    "deploy": "node gh-pages.js -s -b",
+    "predeploy-all": "npm run build",
+    "deploy-all": "node gh-pages.js -s -b",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
