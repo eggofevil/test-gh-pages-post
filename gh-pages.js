@@ -5,6 +5,9 @@
   .* - собирает все файлы начинающиеся с .
   *!(node_modules)/* - coбирает все папки кроме node-modules (кроме начинающихся с .)
 */
+
+console.log(process.argv);
+
 const ghpages = require("gh-pages");
 const ghpagesCacheClean = require(".\\node_modules\\gh-pages\\bin\\gh-pages-clean.js");
 
