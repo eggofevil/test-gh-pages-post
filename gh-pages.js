@@ -1,8 +1,4 @@
 //Скрипт для управления пакетом gh-pages
-
-import { createRequire } from "module";
-const require = createRequire(import.meta.url);
-
 const ghpages = require("gh-pages");
 const ghpagesCacheClean = require("gh-pages/bin/gh-pages-clean.js");
 

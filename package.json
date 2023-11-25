@@ -12,7 +12,6 @@
   "name": "test-gh-pages-post",
   "description": "Simple environment for testing publishing on github",
   "version": "0.0.1",
-  "type": "module",
   "scripts": {
     "mytest": "node cool.js",
     "predeployBld": "npm run build",
