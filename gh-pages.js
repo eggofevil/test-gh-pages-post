@@ -6,7 +6,10 @@
   *!(node_modules)/* - coбирает все папки кроме node-modules (кроме начинающихся с .)
 */
 
-console.log(process.argv);
+process.argv.forEach((arg) => {
+  //console.log(arg);
+});
+console.log(process.env.npm_config_message);
 
 const ghpages = require("gh-pages");
 const ghpagesCacheClean = require(".\\node_modules\\gh-pages\\bin\\gh-pages-clean.js");
@@ -46,7 +49,7 @@ function startDeploy(args) {
     deploy(buildFolder, buildConfig);
   } else if (args.includes("-s")) {
     deploy(projectFolder, srcConfig);
-  } else console.log("Incorrect parameters!");
+  } // else console.log("Incorrect parameters!");
 }
 
 startDeploy(process.argv.slice(2));
