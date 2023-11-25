@@ -14,6 +14,9 @@
   "version": "0.0.1",
   "scripts": {
     "predeploy-all": "",
+    "deploySrc": "echo \"deploySrc\"",
+    "deployBuild": "echo \"deploy build\"",
+    "deployAll": "deploySrc && deployBuid",
     "deploy-all": "node ./gh-pages.js -s && node ./gh-pages.js -b",
     "start": "react-scripts start",
     "build": "react-scripts build",
