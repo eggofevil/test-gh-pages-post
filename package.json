@@ -13,15 +13,13 @@
   "description": "Simple environment for testing publishing on github",
   "version": "0.0.1",
   "scripts": {
-    "mytest": "node cool.js",
     "predeployBld": "npm run build",
     "deploySrc": "node ./gh-pages.js src",
     "deployBld": "node ./gh-pages.js bld",
-    "deployAll": "deploySrc && deployBld",
-    "deploy-all": "node ./gh-pages.js -s && node ./gh-pages.js -b",
+    "deployAll": "npm run deploySrc && npm run deployBld",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test1": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "---Comment---": {
